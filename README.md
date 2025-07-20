@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# transport-hk
+
+This website is intended to visualize APIs and data from DATA.GOV.HK related to public transport services in Hong Kong.
+
+It is a Next.js project created using create-next-app.
 
 ## Getting Started
 
