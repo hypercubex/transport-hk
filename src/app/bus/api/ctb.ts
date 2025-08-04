@@ -1,6 +1,8 @@
 import axios from 'axios'
 
+// This file contains API functions for interacting with the Citybus service
 const COMPANY_ID_CTB = 'CTB'
+
 const apiClient = axios.create({
   baseURL: process.env.API_CITY_BUS
 })
