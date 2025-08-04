@@ -11,10 +11,12 @@ describe('citybus API', () => {
     console.log('beforeAll')
     const mockApiInstance = axios.create()
     mockApi = new MockAdapter(mockApiInstance)
-    jest.spyOn(axios, 'create').mockImplementation(() => {
-      console.log('test!')
-      return mockApiInstance
-    })
+    jest.mock('axios', () => ({
+      create: () => ({
+        console.log('test!')
+        return mockApiInstance
+      })
+    }))
   })
 
   afterEach(() => {
