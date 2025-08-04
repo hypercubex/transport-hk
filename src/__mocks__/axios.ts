@@ -3,8 +3,6 @@ const axios = {
   post: jest.fn(),
   put: jest.fn(),
   delete: jest.fn(),
-  create: jest.fn(function () {
-    return axios;
-  }),
+  create: jest.fn(() => axios),
 }
-export default axios;
+export default axios
