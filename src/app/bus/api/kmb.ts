@@ -5,7 +5,7 @@ type KmbDirection = 'I' | 'O'
 type KmbServiceType = 1 | 2
 
 const apiClient = axios.create({
-  baseURL: process.env.API_KMB + '/v1/transport/kmb'
+  baseURL: process.env.API_KMB
 })
 
 export const listAllRoutes = async () => {
